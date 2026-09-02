@@ -50,7 +50,7 @@
         const vids = data.videos;
         const id = decodeURIComponent(location.hash.replace("#/", ""));
 
-        let selected = vids.find(v => v.id.replace(".mp4", "") === id);
+        let selected = vids.find(v => v.id === id);
 
         if (!selected) {
           selected = vids[0];
